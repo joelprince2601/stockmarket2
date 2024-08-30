@@ -1,5 +1,3 @@
-<!-- popup.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,30 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Tool</title>
     <style>
-        /* Optional: Add some basic styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 10px;
+            margin: 50px;
             width: 300px;
         }
-        #headlines {
-            list-style-type: none;
-            padding: 0;
-        }
+
         #headlines li {
+            margin-bottom: 6px;
+        }
+        button {
             margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
 </head>
 <body>
     <h1>Stock Market Tool</h1>
+    
+    <!-- Button to Collect News -->
     <button id="collectNewsBtn">Collect News</button>
+    
+    <!-- Button to Start Drawing -->
     <button id="startDrawingBtn">Start Drawing</button>
-    
-    <h2>Headlines</h2>
+        
+    <!-- List to Display Headlines -->
     <ul id="headlines"></ul>
-    <script src="content.js"></script>
 
-    
+    <!-- Include the updated JavaScript for handling both news and drawing -->
+    <script src="content.js"></script> <!-- Ensure this points to your correct script -->
 </body>
 </html>
